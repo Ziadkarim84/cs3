@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Ziad Karim">
+    <title>CS3</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Contact Us</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+
+                </div>
+                <div class="modal-body">
+
+                    <form role="form" method="post" id="reused_form">
+                        <p>
+                            Send your message in the form below and we will get back to you as early as possible.
+                        </p>
+
+                        <div class="form-group">
+                            <label for="name">
+                                Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">
+                                Message:</label>
+                            <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                        </div>
+
+
+
+
+
+                        <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Post It! →</button>
+
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; ">
+                        <h3>Sent your message successfully!</h3>
+                    </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; ">
+                        <h3>Error</h3>
+                        Sorry there was an error sending your form.
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--*******************Navbar**********************-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PRODUTOS
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#solar">AQUECEDOR SOLAR</a>
+                        <a class="dropdown-item" href="#gas">AQUECEDOR A GÁS</a>
+                        <a class="dropdown-item" href="#calor">BOMBAS DE CALOR</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#quem">QUEM SOMOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">CONTATO</a>
+                </li>
+
+                <li class="nav-item dropdown dropdown2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SELECIONE SUA CIDADE
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">cidade 1</a>
+                        <a class="dropdown-item" href="#">cidade 2</a>
+                        <a class="dropdown-item" href="#">cidade 3</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <!--    ******************First Section**********************-->
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/cover.png" alt="First slide">
+                <div class="carousel-caption">
+                    <h3>O melhor em aquecimento</h3>
+                    <h3>solar para piscina</h3>
+                    <b>está aqui!</b>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/cover.png" alt="Second slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!--*******************Red Break********************   -->
+
+    <div class="container-fluid nossos">
+        <div class="row">
+            <div class="col-12">
+                <h2>NOSSOS PRODUTOS</h2>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--*******************Section 2********************   -->
+
+
+    <div class="cover cover2 container-fluid" id="solar">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="solar">
+                    <h2>aquecedor solar</h2>
+                    <p>Utilizando o sol como uma fonte de energia limpa, inesgotável e renovável, com sistemas de apoio inteligente elétricos ou a gás, os aquecedores solares, garantem água quente o ano inteiro com a melhor qualidade, conforto e relação custo/benefício.</p>
+                    <div class="dropdown saiba">
+                        <a class="dropdown-toggle" href="#">
+                            SAIBA MAIS
+                        </a>
+                    </div>
+                    <br>
+                    <br class="d-none d-lg-block">
+
+                    <div class="products">
+                        <img src="images/solar/s1.png" alt="" class="product-img img-fluid">
+                        <img src="images/solar/s2.png" alt="" class="product-img img-fluid">
+                        <img src="images/solar/s3.png" alt="" class="product-img img-fluid">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+                <div class="solicite container-box rotated">
+                    <button type="button" class="solicite-btn align-bottom btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal">SOLICITE UM<br>ORÇAMENTO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--*******************Section 3********************   -->
+
+
+    <div class="cover cover3 container-fluid" id="gas">
+        <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <div class="solicite container-box rotated">
+                    <button type="button" class="solicite-btn solicite-btn-left align-bottom btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal">SOLICITE UM<br>ORÇAMENTO</button>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+                <div class="solar gas">
+                    <h2>AQUECEDOR A GÁS</h2>
+                    <p>Além de outras soluções de aquecimento, a CS3
+                        oferece uma gama completa de aquecedores de água a
+                        gás que atendem com alta eficiência diversas necessidades.
+                        Os aquecedores a gás, comercializados pela CS3 estão
+                        entre os mais econômicos do mercado. Os altos índices
+                        de eficiência demonstram que você vai economizar
+                        em custos de energia elétrica, reduzindo o seu impacto
+                        sobre o meio ambiente e ao mesmo tempo, você
+                        saberá que escolheu um produto reconhecido mundialmente
+                        como sinônimo de qualidade.</p>
+                    <div class="dropdown saiba">
+                        <a class="dropdown-toggle" href="#">
+                            SAIBA MAIS
+                        </a>
+                    </div>
+                    <br>
+                    <br class="d-none d-lg-block">
+                    <div class="products">
+                        <img src="images/gas/g1.png" alt="" class="product-img img-fluid">
+                        <img src="images/gas/g2.jpg" alt="" class="product-img img-fluid">
+                        <img src="images/gas/g3.png" alt="" class="product-img img-fluid">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--*******************Section 4********************   -->
+
+    <div class="cover cover4 container-fluid" id="calor">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="solar">
+                    <h2>BOMBAS DE CALOR</h2>
+                    <p>As bombas de calor ou trocadores de calor como são
+                        popularmente conhecidas, proporcionam uma forma
+                        muito econômica e eficiente de aquecimento de piscinas.
+                        Estes equipamentos aproveitam o calor contido no
+                        ar e transferem o mesmo para a água da piscina. Para
+                        cada kWh de energia elétrica consumida, as bombas de
+                        calor comercializadas pela CS3 transferem em média 5
+                        kWh para a piscina. São equipamentos compactos que
+                        normalmente são instalados numa área externa próxima
+                        da piscina.</p>
+                    <div class="dropdown saiba">
+                        <a class="dropdown-toggle" href="#">
+                            SAIBA MAIS
+                        </a>
+                    </div>
+                    <br>
+                    <br class="d-none d-lg-block">
+                    <div class="products">
+                        <img src="images/calor/c1.png" alt="" class="product-img img-fluid">
+                        <img src="images/calor/c2.png" alt="" class="product-img img-fluid">
+                        <img src="images/calor/c3.png" alt="" class="product-img img-fluid">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+                <div class="solicite">
+                    <button type="button" class="solicite-btn align-bottom btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal" style="margin-top: 120%;">SOLICITE UM<br>ORÇAMENTO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--*******************Red Break********************   -->
+
+    <div class="container-fluid nossos" id="quem">
+        <div class="row">
+            <div class="col-12">
+                <h2>QUEM SOMOS</h2>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!--******************* About ********************   -->
+
+    <div class="cover about container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="foto">
+                    <h1>FOTO</h1>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/logo.png" alt="" style="display: block;" class="left-allign desc-logo"><br>
+                <p style="text-align: left;">
+                    Lorem ipsum phasellus odio diam maecenas viverra ut aliquam mauris, rutrum
+                    orci sem primis nisi at curabitur enim, vel habitant eu nisl dui facilisis inceptos
+                    sollicitudin. quisque tincidunt class orci luctus euismod neque odio ante maecenas,
+                    venenatis inceptos habitant pellentesque commodo interdum sed id per
+                    class, nam duis cubilia neque aliquam aenean massa turpis. curae venenatis
+                    rhoncus vehicula taciti torquent phasellus rutrum semper aenean porttitor duis
+                    eros, aliquam diam ornare potenti curabitur aptent faucibus euismod per convallis
+                    tempus etiam laoreet, consectetur sagittis habitant ac sollicitudin odio
+                    donec orci nostra ante taciti.
+                    Vehicula elementum primis ornare fames euismod donec maecenas ultricies
+                    vivamus libero massa, primis pharetra fusce donec nostra felis fringilla nulla lacinia.
+                    commodo class pellentesque varius faucibus praesent a pretium ac convallis,
+                    quisque et eget scelerisque elit nisi nisl luctus, praesent diam quam metus
+                </p>
+                <img src="images/bosch.png" alt="" class="bosch">
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--   *****************Address**************-->
+
+    <div class="container-fluid" id="contato">
+        <div class="row cover address">
+            <div class="col-lg-4">
+                Alphaville, São Paulo e Região
+                Condomínio Club Center - Alameda Amazonas, 938
+                - Loja 8 <br> <br>
+                Alphaville, Barueri - SP, 06454-070
+                Barueri -SP <br> <br>
+                TEL: (11) 2680-2900 <br>
+                Cel: (11) 97048-1942
+            </div>
+            <div class="col-lg-4">
+                Goiânia, Goiás e Região
+                Avenida Transbrasiliana Qd. 243 Lt. 22 - Parque
+                Amazônia <br> <br>
+                Cep: 74.835-300 <br>
+                Goiânia – GO <br> <br>
+                TEL: (62) 3097-3717 <br>
+                CEL: (62) 8318-0708
+            </div>
+            <div class="col-lg-4">
+                Anápolis, Goiás e Região
+                Rua José Neto Paranhos 692 sala 201
+                Bairro Jundiaí - CEP: 75110-720
+                Anápolis – GO <br> <br>
+                TEL: (62) 3706-9695 <br>
+                CEL: (62) 9154-9744 <br><br>
+
+                SIGA NOSSAS REDES SOCIAIS <br>
+                <span><i class="fab fa-facebook-square"></i></span> <span><i class="fab fa-instagram"></i></span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid footer">
+        CS3 - UMA DISTRIBUIDORA AUTORIZADA BOSCH E HELIOTEK EM ALPHAVILLE, SÃO PAULO E GOIÁS
+    </div>
+    <!--******************* Script ********************   -->
+
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body></html>

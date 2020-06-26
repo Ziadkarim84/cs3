@@ -1,0 +1,332 @@
+body,
+html {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.saiba .dropdown-menu {
+    background-color: #FDFAE9 !important;
+    transform: translateX(-20px);
+}
+
+
+.saiba .dropdown-item {
+    font-size: 1.8vw;
+    text-align: left;
+    color: red;
+}
+
+
+.saiba a {
+    color: red;
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+.navbar {
+    padding: 1% 2%;
+    background-color: #FDFAE9 !important;
+    position: relative;
+}
+
+.navbar-brand img {
+    height: 4vw;
+}
+
+.navbar a {
+    color: red !important;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background: none;
+    text-align: right;
+    border: none;
+}
+
+.cover {
+
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    padding: 0 10%;
+
+}
+
+.cover1 {
+    background-image: url(../images/cover.png);
+    padding: 10% 0% 15% 0%;
+    background-color: yellow;
+}
+
+.cover2 {
+    background-image: url(../images/cover2.jpg);
+}
+
+.cover3 {
+    background-image: url(../images/cover3.jpg);
+
+}
+
+.about {
+    background-color: white;
+    padding: 2% 10%;
+}
+
+.cover4 {
+    background-image: url(../images/cover4.jpg);
+}
+
+.carousel h3 {
+    color: #A00000;
+    font-size: 3vw;
+    text-transform: uppercase;
+
+}
+
+.carousel b {
+    font-size: 10vw;
+    text-transform: uppercase;
+    color: white;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.nossos {
+    text-align: center;
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 2% 0%;
+}
+
+.nossos h2 {
+    font-size: 3vw;
+}
+
+.cover2 {
+    padding: 0 10%;
+    height: 100%;
+}
+
+.solar {
+    text-align: center;
+    padding: 20% 8%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.solar h2 {
+    font-size: 3.2vw;
+    text-transform: uppercase;
+}
+
+.solar p {
+    text-align: left;
+    font-size: 1.4vw;
+}
+
+.saiba {
+    display: inline-block;
+    float: right;
+}
+
+.saiba .btn,
+.saiba .btn-secondary {
+    background-color: transparent;
+    color: #EA8823;
+    border: none;
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+    padding: 2% 0%;
+    font-size: 1.6vw;
+}
+
+.products {
+    width: 100%;
+    padding: 2%;
+    background-color: white;
+    margin-top: 5%;
+}
+
+.product-img {
+    display: inline-block;
+    width: 10vw;
+    padding: 0% 3%;
+}
+
+.solicite {
+    width: 100%;
+    height: 100%;
+}
+
+.solicite-btn {
+    right: 0%;
+    transform: translateX(80%);
+    margin-top: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+    line-height: .9;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 20px;
+    padding: 2% 10%;
+}
+
+.solicite-btn-left {
+
+    transform: translateY(100%);
+    margin-top: 100%;
+    margin-right: 80%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+    line-height: .9;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 20px;
+    padding: 2% 10%;
+}
+
+.foto {
+    background-color: red;
+    width: 30vw;
+    height: 30vw;
+}
+
+
+.foto h1 {
+    color: white;
+    transform: translateY(400%);
+    display: block;
+}
+
+.desc-logo {
+    height: 6vw;
+}
+
+.about p {
+    font-size: 15px;
+}
+
+.bosch {
+    height: 100px;
+}
+
+.address {
+    background-image: url(../images/Asset%203.png);
+    background-blend-mode: soft-light;
+    background-color: #E98922;
+    color: white;
+    padding: 8% 5%;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.footer {
+    width: 100%;
+    background-color: red;
+    color: black;
+    text-align: center;
+    font-size: 1vw;
+    padding: 2%;
+    font-weight: bold;
+}
+
+/*<!--*******************Media Query********************   -->*/
+
+
+@media (min-width: 968px) {
+    .dropdown2 .dropdown-item {}
+
+    .dropdown-menu {
+        position: absolute;
+        background-color: #FDFAE9 !important;
+        text-align: right;
+        left: 20%;
+    }
+}
+
+
+@media (max-width: 1199.98px) {
+    .navbar-light .navbar-nav .nav-link {
+        color: rgba(0, 0, 0, .5);
+        float: right;
+    }
+}
+
+
+@media (max-width: 1090.98px) {
+    .solicite {
+        height: 0;
+
+    }
+
+    .solicite-btn {
+        transform: translate(0, 0);
+        margin-top: 0 !important;
+        margin: auto;
+        transform: translateY(-150%);
+        position: relative;
+        z-index: 100;
+    }
+
+    .foto {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .foto h1 {
+        color: white;
+        transform: translateY(180%);
+        display: block;
+    }
+
+    .cover {
+        padding: 0;
+    }
+
+    .about {
+        padding: 2%;
+    }
+
+    .address {
+        text-align: center;
+    }
+
+    .product-img {
+        width: 12vw;
+    }
+}
+
+@media (max-width: 967.98px) {
+    .product-img {
+        width: 20vw;
+    }
+}
